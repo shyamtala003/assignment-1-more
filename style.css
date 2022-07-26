@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button
+{
+    cursor: pointer;
+}
+::selection
+{
+    color: white;
+    background-color: #000;
+}
+.container
+{
+    width: 90vw;
+    max-width: 1300px;
+    /* background: gray; */
+    margin: 0 auto;
+}
+
+/* -----------------navbar section started------------- */
+.logo>img
+{
+    width: 130px;
+}
+nav.navbar-container
+{
+    font-family: 'Orbitron',sans-serif;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0px;
+}
+ul.list
+{
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+ul>li.list-item
+{
+    position: relative;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .3s ease-in;
+    letter-spacing: 2px;
+    
+}
+ul>li.list-item:hover,.active
+{
+    transform: scale(1.2);
+}
+ul>li.active,ul>li.list-item:hover:after
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,20%);
+    width: 60%;
+    height: 2px;
+    border-radius: 20px;
+    background: #000;
+    transition: all 2s ease-in-out;
+}
+.button-group
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.nav-button
+{
+    font-family: 'arial';
+    color: #515151;
+    padding: .5rem 3rem;
+    background: transparent;
+    border: 3px solid #000;
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    border-radius: 15px;
+    transition: all .5s ease-in;
+}
+.nav-button:hover
+{
+    color: #fff;
+    background-color: #000;
+}
+/* ------X-----------navbar section ended------X------ */
+
+/* ---------------------Hero Banner Section started -------------- */
+
+.hero__banner
+{
+    padding: 3rem 0px;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+}
+.image__section
+{
+    position: relative;
+    width: 35%;
+}
+.content__section
+{
+    width: 65%;
+}
+img.man__image
+{
+    width: 80%;
+    z-index: 4;
+}
+img.squares__image
+{
+    position: absolute;
+    z-index: -1;
+    width: 70%;
+    right: 5%;
+    bottom: 11%;
+}
+
+.content__section
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.contact__section
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+}
+.decoration__image
+{
+    position: relative;
+    width: 100%;
+}
+.decoration__image> img
+{
+    width: 60px;
+}
+.decoration__image> img:first-child
+{
+    position: absolute;
+    top: -110%;
+    left: 20%;
+}
+.decoration__image> img:nth-child(2)
+{
+    /* position: absolute; */
+    float: right;
+}
+h1.text__head
+{
+    font-family:'Orbitron';
+    font-size:4rem;
+}
+p.text_pera
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #515151;
+    font-weight: 500;
+    width: 70%;
+    text-align: center;
+}
+input[type="email"]#email__input
+{
+    background-color: transparent;
+    border: 3px solid #000;
+    font-family: "Orbitron";
+    font-weight: 700;
+    padding: .2rem 1rem;
+    border-radius: 10px;
+}
+.btn{
+    background: #000;
+    color: white;
+    font-family: "Orbitron";
+    font-weight: 700;
+    padding: .2rem 1rem;
+    border-radius: 10px;
+    transition: all .5s ease-in-out;
+}
+.btn:hover
+{
+    background-color: white;
+    color: #000;
+}
+
+.contact__section h1.title
+{
+    font-size: 20px;
+    font-family: 'arial';
+    color: #515151;
+    font-weight: 500;
+}
+.contact__section ul
+{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+.contact__section ul li>img
+{
+    width: 30px;
+    transition: all .5 ease-in;
+}
+.contact__section ul li>img:hover
+{
+    transform: scale(1.2);
+}
+/* --------X------X-------Hero Banner Section started ---X-------X---- */
